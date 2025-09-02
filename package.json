@@ -1,0 +1,31 @@
+{
+  "name": "qbench-automation",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/setup-env.js",
+    "test": "playwright test",
+    "test:order": "playwright test tests/features/order.spec.ts",
+    "test:sample": "playwright test tests/features/sample.spec.ts", 
+    "test:test": "playwright test tests/features/test.spec.ts",
+    "test:features": "playwright test tests/features/",
+    "test:visual": "playwright test tests/visual/",
+    "test:visual:update": "playwright test tests/visual/ --update-snapshots",
+    "test:all": "playwright test tests/",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install",
+    "postinstall": "npm run install:browsers"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "dotenv": "^16.6.1",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

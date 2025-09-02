@@ -1,0 +1,52 @@
+{
+  "users": {
+    "testUser": {
+      "description": "Test user credentials are stored in environment variables"
+    }
+  },
+  "orders": {
+    "default": {
+      "customer": "Dunder Mifflin",
+      "projectManager": "Melvin Caraang",
+      "priority": "Normal",
+      "status": "Active"
+    },
+    "urgent": {
+      "customer": "Dunder Mifflin",
+      "projectManager": "Melvin Caraang",
+      "priority": "Urgent",
+      "status": "Active"
+    }
+  },
+  "samples": {
+    "default": {
+      "numberOfSamples": 1,
+      "labNumberPrefix": "LAB",
+      "field1": "test",
+      "field2": "test",
+      "dateDay": "1",
+      "additionalField": "3"
+    }
+  },
+  "tests": {
+    "aminoAcids": {
+      "name": "Amino Acids",
+      "expectedCount": "3 tests"
+    }
+  },
+  "timeouts": {
+    "short": 1000,
+    "medium": 2000,
+    "long": 5000,
+    "extraLong": 10000,
+    "navigation": 30000
+  },
+  "validation": {
+    "messages": {
+      "orderCreated": "Order created successfully",
+      "sampleCreated": "Sample created successfully",
+      "testAdded": "Test added successfully",
+      "cleanupComplete": "Full cleanup completed - Order, Sample, and Test deleted"
+    }
+  }
+}
